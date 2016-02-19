@@ -8,7 +8,10 @@ authors:
 competencies: Programming, Javascript
 ---
 
-# DOM
+
+# The DOM (Document Object Model)
+
+## Learning Objectives
 
 - Explain what the DOM is and how it is structured
 - Select and target DOM elements using DOM methods
@@ -16,7 +19,7 @@ competencies: Programming, Javascript
 - Create, read, update, and delete DOM elements
 - Change the attributes or content of a DOM element
 
-## Document Object Model (5 min)
+## Framing (5 min)
 
 The [**D**ocument **O**bject **M**odel](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 is a programming interface for HTML.
@@ -149,3 +152,5 @@ Pixart: https://github.com/ga-wdi-exercises/pixart_js
 
 ## References
 - https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+[![Build Status](https://travis-ci.org/ga-wdi-lessons/js-dom.svg?branch=master)](https://travis-ci.org/ga-wdi-lessons/js-dom)
