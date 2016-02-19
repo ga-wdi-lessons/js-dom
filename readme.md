@@ -21,6 +21,7 @@ competencies: Programming, Javascript
 The [**D**ocument **O**bject **M**odel](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 is a programming interface for HTML.
 
+
 An HTML *document* is available for us to manipulate as an object, and this object is structured like a tree:
 
 Not like [this tree](http://hakim.se/experiments/css/domtree/).
@@ -54,7 +55,7 @@ html
     └── footer
 ```
 
-Let's look at the structure of [a page](https://github.com/ga-dc/js-dom-quotes)
+Let's look at the structure of [a page](https://github.com/ga-wdi-exercises/js-dom-quotes/blob/master/index.html)
 
 ## Accessing the document (10 min)
 
@@ -87,7 +88,7 @@ Methods are available on any element.
 
 ## You Do: Selecting DOM elements (10 min)
 
-https://github.com/ga-dc/js-dom-quotes
+https://github.com/ga-wdi-exercises/js-dom-quotes
 
 ## Altering DOM Elements (5 min)
 
@@ -131,7 +132,7 @@ http://eloquentjavascript.net/14_event.html
 ## Examples
 
 - [jessica hische](http://jessicahische.is/)
-- [color scheme switcher](https://github.com/ga-dc/color-scheme-switcher)
+- [color scheme switcher](https://github.com/ga-wdi-exercises/color-scheme-switcher)
 
 ## Conclusion (5 min)
 
@@ -143,8 +144,8 @@ http://eloquentjavascript.net/14_event.html
 
 ## Homework
 
-<https://github.com/ga-dc/fellowship>
+Pixart: https://github.com/ga-wdi-exercises/pixart_js
 
 
 ## References
-- - https://developer.mozilla.org/en-US/docs/Web/API/Event
+- https://developer.mozilla.org/en-US/docs/Web/API/Event
