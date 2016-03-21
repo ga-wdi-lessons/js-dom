@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Click Me!</h1>
+  <a href="https://www.google.com">This is a link to google!</a>
+  <script>
+  var clickMe = document.querySelector("h1")
+  clickMe.addEventListener("click", function(){
+    console.log("you clicked the h1!")
+  })
+  var anchor = document.querySelector("a")
+  anchor.addEventListener("click", function(evt){
+    evt.preventDefault()
+    console.log("you clicked the anchor!")
+  })
+  </script>
+</body>
+</html>
