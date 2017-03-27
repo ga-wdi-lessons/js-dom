@@ -89,7 +89,7 @@ For this reason, we link script tags at the end of the file so that at least the
 > Why does loading scripts at the end make me a little uneasy? (John's personal opinion -- would love to be contradicted)
 
 ## Accessing Element Objects (60 minutes)
-When interacting with the DOM, we will primarily be interfacing with [[      <li class="red">red</li>][Element Objects]]
+When interacting with the DOM, we will primarily be interfacing with element object
 
 The `document` object is exposed on the global object, `window`. This is the top level or root element object
 
