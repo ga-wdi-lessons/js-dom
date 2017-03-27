@@ -160,66 +160,63 @@ As always, discuss what you find with your neighbors -- explaining these ideas i
 
 https://github.com/ga-wdi-exercises/js-dom-quotes
 
-## Accessing the document (10 min)
+## Manipulating Element Objects (60 minutes)
 
-`document`
-  - `document.head`
-  - `document.body`
+### Attributes
 
-Each web page loaded in the browser has its own document object. The Document interface serves as an entry point to the web page's content
+vanilla: `element.getAttribute(attr)` / `element.setAttribute(attr, val)`
+jquery: `$el.attr(attr)` / `$el.attr(attr, val)` 
 
-### Element attributes
+> Do you notice anything about how jquery gets and sets methods?
 
-`document.body`
-  - .children
-  - .childNodes
-  - .firstChild
-  - .lastChild
-  - .nextSibling
-  - .parentElement
-  - .parentNode
+### Classes
 
-Methods are available on any element.
+vanilla: `element.classList` (see docs)
+jquery: `$el.hasClass(class)`, `$el.addClass(class)`, `$el.removeClass(class)`, `$el.toggleClass(class)`
 
-### Methods for selecting elements
+### Style
 
-- document.getElementById
-- document.getElementsByTagName
-- document.getElementsByClassName
-- document.querySelector
-- document.querySelectorAll
+vanilla: `element.style`
+jquery: `$el.css(propertyName, [value])`
 
-## You Do: Selecting DOM elements (10 min)
+### Input Value
 
-https://github.com/ga-wdi-exercises/js-dom-quotes
+vanilla: `inputElement.value` / `inputElement.value = someValue` 
+jquery: `$inputEl.val()` / `$inputEl.val(someValue)`
 
-## Altering DOM Elements (5 min)
+### You Do: Logo hijack (15 minutes)
 
-- [.textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
-- .innerHTML
-- .setAttribute(name, value);
-- .id
-- .classList.toggle (add, remove, contains)
-- .style
+- Find the URL of the yahoo logo
+- Navigate to google.com
+- Store the string url for the yahoo logo in a variable
+- Find the element for the google logo and store to a variable
+- Find the element for the google search button and store it to a variable
+- Update the logo to yahoo's
+- Change the text of the search button
+- BONUS: add a new element between the logo and the search container announcing "Yahoo is the new Google"
 
-## You do: Logo hijack (15 min)
+### BREAK (10 minutes)
 
-1. Open up www.google.com in Chrome or Firefox, and open up the console.
-- Store the url to the Yahoo logo in a variable.
-- Find the Google logo and store it in a variable.
-- Modify the source of the logo IMG so that it's a Yahoo logo instead.
-- Find the Google search button and store it in a variable.
-- Modify the text of the button so that it says "Yahooo!" instead.
+### Creating Elements
 
-Bonus: Add a new element between the image and the search textbox, telling the world that "Yahoo is the new Google".
+vanilla: `document.createElement(tagName)`
+jquery: `$('<tagName></tagName>)`
 
-## Creating/Removing DOM Elements (1 min)
+NOTE: this just creates elements but they are not yet on the document!
 
-- [Document.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
-- [Node.appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
-- Node.removeChild
+### Adding Elements
 
-## Break (5 min)
+vanilla: `element.appendChild(newElement)`
+jquery: `$el.append($el)`
+
+> look at the docs for the vanilla methoth `.innerHTML` and the jquery method `.html()`. How are these different from the above method?
+
+> Why might we not really like any of these?
+
+### Removing Elements
+
+vanilla: `element.removeChild(childElement)`
+jquery: `$el.remove(selector)` / `$el.empty()`
 
 ## Events (10 min)
 
