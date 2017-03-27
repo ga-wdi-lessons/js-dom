@@ -120,12 +120,11 @@ To get the underlying DOM element we use the get method and provide an index (jq
 
 #### You Do (5 minutes)
 
-Use google throughout and talk with your neighbors about confusing parts of documentation. 
-Docs are written precisely using sometimes confusing syntax; this is necessary and a good thing but takes some getting used to
-
 Spend a few minutes navigating our simple list using these properties and methods in the console.
 Evaluate frequently to keep you bearings and remember to use the up/down arrows to navigate your history.
 
+Use google throughout and talk with your neighbors about confusing parts of documentation. 
+Docs are written precisely using sometimes confusing syntax; this is necessary and a good thing but takes some getting used to
 
 ### Query Selection (10 minutes)
 
