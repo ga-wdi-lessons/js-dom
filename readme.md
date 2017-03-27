@@ -183,16 +183,22 @@ jquery: `$el.css(propertyName, [value])`
 vanilla: `inputElement.value` / `inputElement.value = someValue` 
 jquery: `$inputEl.val()` / `$inputEl.val(someValue)`
 
-### You Do: Logo hijack (15 minutes)
+### Content
 
-- Find the URL of the yahoo logo
-- Navigate to google.com
-- Store the string url for the yahoo logo in a variable
-- Find the element for the google logo and store to a variable
-- Find the element for the google search button and store it to a variable
-- Update the logo to yahoo's
-- Change the text of the search button
-- BONUS: add a new element between the logo and the search container announcing "Yahoo is the new Google"
+vanilla: `element.innerHTML` / `element.innerHTML = "<p> I'm new </p>"`
+jquery: `$el.html()` / `$el.html( "<p> I'm new </p>")`
+
+### You do: Logo hijack (15 min)
+
+1. Open up https://www.microsoft.com/en-us/ in Chrome or Firefox, and open up the console.
+1. find an image url for the apple logo
+1. Store the url to the apple logo in a variable.
+1. Find the Microsfot logo using JS and store it in a variable.
+1. Modify the source of the logo IMG so that it's an apple logo instead.
+1. Find the Microsoft search input and store it in a variable.
+1. Modify the placeholder of the input so that it says "Search Apple" instead.
+
+Bonus: Add a new element between the image and the search textbox, telling the world that "Microsoft is the new Apple".
 
 ### BREAK (10 minutes)
 
