@@ -9,15 +9,14 @@ competencies: Programming, Javascript
 ---
 
 
-# The DOM (Document Object Model)
+# The Document Object Model (DOM)
 
 ## Learning Objectives
-
-- Explain what the DOM is and how it is structured
-- Select and target DOM elements using DOM methods
-- Select and target DOM elements using a query selector
-- Create, read, update, and delete DOM elements
-- Change the attributes or content of a DOM element
+- Explain the DOM: its value and its structure
+- Introduce the role, utility, and pros/cons of JQuery
+- Access DOM Elements using relative selection
+- Access DOM Elements using query selectors
+- Create, Read (access), Update (content and attributes), and Destroy DOM elements
 
 ## Framing (5 min)
 
