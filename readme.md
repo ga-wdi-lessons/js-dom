@@ -88,6 +88,78 @@ For this reason, we link script tags at the end of the file so that at least the
 
 > Why does loading scripts at the end make me a little uneasy? (John's personal opinion -- would love to be contradicted)
 
+## Accessing Element Objects (60 minutes)
+When interacting with the DOM, we will primarily be interfacing with [[      <li class="red">red</li>][Element Objects]]
+
+The `document` object is exposed on the global object, `window`. This is the top level or root element object
+
+If you haven't already, clone this repo. Open `docs/index.html` in your browser and open the developer console. JQuery has been imported from the HTML. 
+
+The document has several entry points to the page's content including `.head` and `.body`
+
+### Relative Selection (20 minutes)
+There are several properties that every element has which reference the elements proximate to it:
+
+- `.children` (jquery: `.children()`)
+- `.childNodes`
+- `.firstChild`
+- `.lastChild`
+- `.previousSibling` (jquery: `.prev()`)
+- `.nextSibling` (jquery: `.next()`)
+- `.parentElement` (jquery: `.parent()`)
+
+jquery only:
+- `.siblings()`
+- `.parents()`
+
+![Node Relations]( https://www.w3schools.com/xml/navigate.gif ) 
+
+In order to use jquery methods, we need to construct a jquery object. This is done by passing an element to the jquery constructor function.
+To get the jquery document element we evaluate `$(document)`. 
+To get the underlying DOM element we use the get method and provide an index (jquery objects all act as collections). So (`$(document).get(0) === document`)
+
+#### You Do (5 minutes)
+
+Use google throughout and talk with your neighbors about confusing parts of documentation. 
+Docs are written precisely using sometimes confusing syntax; this is necessary and a good thing but takes some getting used to
+
+Spend a few minutes navigating our simple list using these properties and methods in the console.
+Evaluate frequently to keep you bearings and remember to use the up/down arrows to navigate your history.
+
+
+### Query Selection (10 minutes)
+
+> Why is relative traversal from the top level an unmaintainable approach to element selection?
+
+Fortunately, we have some much easier method of accessing elements.
+
+#### By Id
+`document.getElementById(id)`
+
+#### By Tag
+`document.getElementsByTagName(tagName)`
+
+#### By Class
+`document.getElementsByClassName(className)`
+
+#### By Selector <-- USE THIS ONE
+`document.querySelector(selector)` and `document.querySelectorAll(selector)` use CSS selectors to target elements.
+This is the primary means by which jquery selects elements: `$(selector)`.  
+
+> What's the difference between `querySelector` and `querySelectorAll`? How does `$(selector)` behave?
+
+> Why would we use any of the other selectors?
+
+#### You Do (5 minutes)
+Play with that same list, now using query selectors. Spend some time perusing the jquery docs and the MDN documentation on these functions.
+As always, discuss what you find with your neighbors -- explaining these ideas in your own words is as valuable as using them
+
+### BREAK (10 minutes)
+
+### You Do: Selecting DOM elements (20 minutes)
+
+https://github.com/ga-wdi-exercises/js-dom-quotes
+
 ## Accessing the document (10 min)
 
 `document`
