@@ -199,7 +199,7 @@ jquery: `$inputEl.val()` / `$inputEl.val(someValue)`
 ### Creating Elements
 
 vanilla: `document.createElement(tagName)`
-jquery: `$('<tagName></tagName>)`
+jquery: `$('<tagName></tagName>')`
 
 NOTE: this just creates elements but they are not yet on the document!
 
