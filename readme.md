@@ -218,36 +218,22 @@ jquery: `$el.append($el)`
 vanilla: `element.removeChild(childElement)`
 jquery: `$el.remove(selector)` / `$el.empty()`
 
-## Events (10 min)
+## Intro to Events / Review (time permitting)
 
-What is an event?
-http://eloquentjavascript.net/14_event.html
+We've covered a lot today but we are missing one key element to creating dynamic sites.
 
-- .onclick
-- .addEventListener
-  - click
-  - mouseover
-- .preventDefault()
+> What are we missing?
 
-## Examples
+The following exercise introduces this and will be a great primer for tomorrow.
 
-- [jessica hische](http://jessicahische.is/)
-- [color scheme switcher](https://github.com/ga-wdi-exercises/color-scheme-switcher)
+For the time being, use jquery for the following exercise. The relevant docs are here [click events](http://api.jquery.com/on/#event-handler)!
 
-## Conclusion (5 min)
+https://github.com/ga-wdi-exercises/ttmar
 
-1. What is the difference between a method and an attribute?
-2. What is the difference between `onclick` and `addEventListener?`
+(As always, Eloquent JS has a great treatment of events: http://eloquentjavascript.net/14_event.html)
 
-## Break (10 min)
----
-
-## Homework
-
-Pixart: https://github.com/ga-wdi-exercises/pixart_js
-
-
-## References
-- https://developer.mozilla.org/en-US/docs/Web/API/Event
-
-[![Build Status](https://travis-ci.org/ga-wdi-lessons/js-dom.svg?branch=master)](https://travis-ci.org/ga-wdi-lessons/js-dom)
+## Reference
+- [W3 Schools DOM](https://www.w3schools.com/js/js_htmldom.asp)
+- [MDN DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#Interfaces_and_Objects)
+- [JQuery Docs](http://api.jquery.com/)
+- [Eloquent JS: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
